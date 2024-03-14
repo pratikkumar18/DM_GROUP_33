@@ -29,4 +29,16 @@ jobs:
       - name: Execute R script
         run: |
           Rscript R/load_data.R
-     
+      - name: Add files
+        run: |
+          git config --global user.email "kumarpratik190@gmail.com"
+          git config --global user.name "pratikkumar18"
+          git add --all figures/
+      - name: Commit files
+        run: |
+          git commit -m "Add regression plot figure"
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            branch: main     
