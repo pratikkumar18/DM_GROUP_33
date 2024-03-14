@@ -1,0 +1,51 @@
+Category_id,Category_name,Parent_category_id,Parent_category
+CA0001,Electronics,,
+CA0002,Clothing,,
+CA0003,Home & Kitchen,,
+CA0004,Sports & Outdoors,,
+CA0005,Beauty,,
+CA0006,Computers & Accessories,PC0001,Electronics
+CA0007,Mobile Phones & Accessories,PC0001,Electronics
+CA0008,Audio & Video,PC0001,Electronics
+CA0009,Cameras & Photography,PC0001,Electronics
+CA0010,Wearable Technology,PC0001,Electronics
+CA0011,Home Appliances,PC0001,Electronics
+CA0012,Gaming,PC0001,Electronics
+CA0013,Office Electronics,PC0001,Electronics
+CA0014,Electronic Accessories,PC0001,Electronics
+CA0015,Tops,PC0002,Clothing
+CA0016,Bottoms,PC0002,Clothing
+CA0017,Dresses,PC0002,Clothing
+CA0018,Outerwear,PC0002,Clothing
+CA0019,Activewear,PC0002,Clothing
+CA0020,Intimates,PC0002,Clothing
+CA0021,Swimwear,PC0002,Clothing
+CA0022,Formal Wear,PC0002,Clothing
+CA0023,Accessories,PC0002,Clothing
+CA0024,Furniture,PC0003,Home & Kitchen
+CA0025,Kitchen Appliances,PC0003,Home & Kitchen
+CA0026,Cookware & Bakeware,PC0003,Home & Kitchen
+CA0027,Home Decor,PC0003,Home & Kitchen
+CA0028,Storage & Organization,PC0003,Home & Kitchen
+CA0029,Bedding & Linens,PC0003,Home & Kitchen
+CA0030,Cleaning Supplies,PC0003,Home & Kitchen
+CA0031,Lighting,PC0003,Home & Kitchen
+CA0032,Bathroom Accessories,PC0003,Home & Kitchen
+CA0033,Fitness Equipment ,PC0004,Sports & Outdoors
+CA0034,Outdoor Gear,PC0004,Sports & Outdoors
+CA0035,Athletic Clothing,PC0004,Sports & Outdoors
+CA0036,Cycling,PC0004,Sports & Outdoors
+CA0037,Camping & Hiking,PC0004,Sports & Outdoors
+CA0038,Fishing Gear ,PC0004,Sports & Outdoors
+CA0039,Team Sports,PC0004,Sports & Outdoors
+CA0040,Water Sports ,PC0004,Sports & Outdoors
+CA0041,Outdoor Recreation,PC0004,Sports & Outdoors
+CA0042,Skincare,PC0005,Beauty
+CA0043,Makeup,PC0005,Beauty
+CA0044,Haircare,PC0005,Beauty
+CA0045,Fragrances,PC0005,Beauty
+CA0046,Bath & Body,PC0005,Beauty
+CA0047,Tools & Accessories ,PC0005,Beauty
+CA0048,Men's Grooming,PC0005,Beauty
+CA0049,Oral Care,PC0005,Beauty
+CA0050,Wellness & Supplements,PC0005,Beauty

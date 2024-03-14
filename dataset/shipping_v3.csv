@@ -1,0 +1,159 @@
+Shipping_id,Shipper_name,Shipping_status,Shipping_date,Address_line_1,Postcode,City,Country
+SH0001,QuickShip Ltd.,shipped,2023-07-22,1 Warner junctions,WR67 4SX,East Christopher,United Kingdom
+SH0002,ParcelGo Co.,completed,2022-07-05,"Studio 6
+Peter cove",L05 2NH,South Katie,United Kingdom
+SH0003,QuickShip Ltd.,awaiting pickup,2022-11-02,9 Emma square,CR7 2BJ,Lake Brucefurt,United Kingdom
+SH0004,NextDay Delivery,cancelled,2023-07-18,2 Lauren stravenue,IG04 6HE,South Geoffrey,United Kingdom
+SH0005,MailExpress Inc.,awaiting pickup,2022-07-16,"Studio 68t
+Richards loaf",M4S 5YJ,Fisherberg,United Kingdom
+SH0006,QuickShip Ltd.,completed,2022-11-14,"Studio 0
+Kathleen street",L7 4FH,Elliotport,United Kingdom
+SH0007,NextDay Delivery,shipped,2023-04-29,"Flat 69
+Sarah neck",B4 7WY,Ashleighhaven,United Kingdom
+SH0008,MailExpress Inc.,awaiting shipment,2023-12-03,119 Mitchell radial,IG9V 5DT,South Shaneborough,United Kingdom
+SH0009,MailExpress Inc.,awaiting pickup,2024-03-07,7 Curtis canyon,SL6 3WY,West Stephen,United Kingdom
+SH0010,MailExpress Inc.,shipped,2022-12-07,"Studio 0
+Kay valley",NP3R 8JR,North Robinstad,United Kingdom
+SH0011,NextDay Delivery,shipped,2023-04-14,"Flat 09d
+Chloe village",W3U 0QG,East Rebeccashire,United Kingdom
+SH0012,NextDay Delivery,shipped,2023-10-18,9 Lawrence terrace,G4A 6NW,North Dannyland,United Kingdom
+SH0013,QuickShip Ltd.,shipped,2023-07-21,"Studio 95x
+Griffiths wells",BA3 5AW,Barkerhaven,United Kingdom
+SH0014,QuickShip Ltd.,shipped,2023-10-26,"Flat 45
+Pauline brooks",M9B 2YE,Hollyside,United Kingdom
+SH0015,MailExpress Inc.,awaiting shipment,2022-09-17,"Studio 2
+Barbara vista",TD31 9HQ,North Jessica,United Kingdom
+SH0016,QuickShip Ltd.,awaiting shipment,2022-07-20,"Studio 68I
+Wall key",M05 3SQ,Masonburgh,United Kingdom
+SH0017,NextDay Delivery,awaiting pickup,2023-03-26,"Flat 34t
+Reeves manors",HG0 9DW,Davidmouth,United Kingdom
+SH0018,QuickShip Ltd.,awaiting shipment,2023-05-10,"Flat 5
+Martin plaza",AB19 7DR,Chamberston,United Kingdom
+SH0019,QuickShip Ltd.,awaiting pickup,2024-02-23,"Studio 98
+Andrews divide",GL6W 9GX,Thomasland,United Kingdom
+SH0020,QuickShip Ltd.,awaiting pickup,2023-08-16,6 Kate ridge,PL74 2TJ,Barneschester,United Kingdom
+SH0021,MailExpress Inc.,completed,2022-06-29,"Flat 3
+Gillian shoal",LN8 0SP,Moorefurt,United Kingdom
+SH0022,QuickShip Ltd.,completed,2023-09-10,"Flat 1
+Mahmood falls",IV8P 4QS,Thompsonport,United Kingdom
+SH0023,MailExpress Inc.,shipped,2022-10-27,"Studio 24
+Gregory gateway",WN9E 1DZ,New Dawn,United Kingdom
+SH0024,QuickShip Ltd.,awaiting pickup,2023-07-13,622 Gail islands,SK50 4DF,Brownshire,United Kingdom
+SH0025,NextDay Delivery,awaiting pickup,2022-03-21,"Studio 8
+Gregory camp",W9 6NF,Charliefurt,United Kingdom
+SH0026,MailExpress Inc.,completed,2023-05-09,"Studio 52I
+Nigel crescent",M9 1ER,Port Russelltown,United Kingdom
+SH0027,ParcelGo Co.,awaiting shipment,2024-01-14,"Flat 00
+Wood common",WV9E 8EH,Rachelside,United Kingdom
+SH0028,QuickShip Ltd.,completed,2023-03-24,"Flat 63
+Mason estates",N3 3XB,Port Jonathan,United Kingdom
+SH0029,QuickShip Ltd.,awaiting pickup,2023-10-05,"Flat 02
+John views",TQ84 7TF,West Meganview,United Kingdom
+SH0030,QuickShip Ltd.,completed,2022-08-02,"Flat 56Y
+Charlie stravenue",L1 0UP,Port Juliamouth,United Kingdom
+SH0031,ParcelGo Co.,awaiting pickup,2022-12-17,"Flat 49
+Dylan rapid",ST5P 8TJ,Jonestown,United Kingdom
+SH0032,MailExpress Inc.,completed,2024-01-28,494 Sarah road,W9G 6ZQ,Mooreton,United Kingdom
+SH0033,MailExpress Inc.,completed,2022-09-19,0 Ryan junction,TQ57 3PT,Jonathanport,United Kingdom
+SH0034,QuickShip Ltd.,awaiting pickup,2022-06-01,2 Nixon heights,BA1E 4WJ,Morrisstad,United Kingdom
+SH0035,GlobalFreight Services,awaiting pickup,2023-11-11,48 Hunt plain,PO5 3UX,Elliottville,United Kingdom
+SH0036,MailExpress Inc.,completed,2023-11-19,"Flat 5
+Patricia estate",BD5R 1BH,Daniellebury,United Kingdom
+SH0037,GlobalFreight Services,shipped,2024-01-04,7 James lights,L7 2GP,Carolineburgh,United Kingdom
+SH0038,QuickShip Ltd.,awaiting shipment,2023-03-31,"Studio 6
+Mohamed road",LU1 2JP,Port Brandonmouth,United Kingdom
+SH0039,QuickShip Ltd.,shipped,2022-10-03,015 Willis plaza,DG74 7WB,Mollyberg,United Kingdom
+SH0040,QuickShip Ltd.,shipped,2023-03-29,4 Webb mills,SL9V 3BR,West Denise,United Kingdom
+SH0041,MailExpress Inc.,completed,2022-10-13,"Flat 6
+Colin causeway",LA34 0AY,New Kennethtown,United Kingdom
+SH0042,QuickShip Ltd.,shipped,2023-01-13,"Flat 05T
+Kerry rue",TR9 3RB,South Lauren,United Kingdom
+SH0043,QuickShip Ltd.,completed,2023-10-05,"Flat 52
+Hussain light",HR49 3DA,Francescahaven,United Kingdom
+SH0044,GlobalFreight Services,shipped,2022-07-31,79 Edward mount,HA7R 2WL,North Juliefurt,United Kingdom
+SH0045,GlobalFreight Services,awaiting pickup,2023-10-15,"Studio 8
+Terence creek",G71 6FS,Rickyborough,United Kingdom
+SH0046,MailExpress Inc.,completed,2022-06-21,"Flat 42A
+Reid walks",FK8 3YE,Lake Bethton,United Kingdom
+SH0047,QuickShip Ltd.,awaiting pickup,2023-08-22,"Studio 7
+Tracy overpass",L39 6YW,East Rogerstad,United Kingdom
+SH0048,MailExpress Inc.,completed,2022-06-05,241 Jenna pike,EX1 6QW,Port Terence,United Kingdom
+SH0049,MailExpress Inc.,awaiting shipment,2022-07-03,"Flat 9
+Vanessa drives",G9 7RP,South Holly,United Kingdom
+SH0050,MailExpress Inc.,awaiting pickup,2022-03-14,844 Hill locks,S5W 2QD,Harrisonville,United Kingdom
+SH0051,NextDay Delivery,shipped,2022-06-03,9 Allan falls,HS3H 2YH,Cliffordbury,United Kingdom
+SH0052,MailExpress Inc.,awaiting shipment,2023-06-15,560 Marie plaza,S59 8PN,Holtshire,United Kingdom
+SH0053,QuickShip Ltd.,shipped,2023-06-02,"Studio 2
+Andrew highway",CT8 5WW,West Mohammadhaven,United Kingdom
+SH0054,MailExpress Inc.,awaiting pickup,2023-09-04,"Studio 76
+Taylor turnpike",SS9 7SW,South Anthony,United Kingdom
+SH0055,MailExpress Inc.,shipped,2022-11-03,"Flat 27x
+Pearce rue",BA1 2ED,Port Hilary,United Kingdom
+SH0056,MailExpress Inc.,completed,2024-02-21,96 Jordan stravenue,W0 9SH,Port Lauraburgh,United Kingdom
+SH0057,QuickShip Ltd.,shipped,2022-12-13,"Flat 56
+Sylvia meadows",BD6 2RW,Port Carolyn,United Kingdom
+SH0058,MailExpress Inc.,completed,2022-06-26,"Flat 5
+King parkways",W1 0UE,Glennview,United Kingdom
+SH0059,QuickShip Ltd.,completed,2024-02-19,"Flat 68l
+Vanessa roads",B22 9WU,Marianmouth,United Kingdom
+SH0060,MailExpress Inc.,shipped,2023-08-01,"Flat 76
+Glen glens",G0J 4LN,North Robert,United Kingdom
+SH0061,GlobalFreight Services,shipped,2023-03-24,094 Harris pass,M1K 9EN,Port Melanie,United Kingdom
+SH0062,QuickShip Ltd.,shipped,2023-09-26,184 Horton harbors,B12 1FS,Lake Scottland,United Kingdom
+SH0063,QuickShip Ltd.,awaiting shipment,2023-09-18,"Flat 83
+Bates springs",M8 4DR,North Bradleymouth,United Kingdom
+SH0064,QuickShip Ltd.,completed,2023-08-11,"Flat 69M
+Lawrence isle",W1 3ZY,Steeletown,United Kingdom
+SH0065,QuickShip Ltd.,awaiting pickup,2023-05-16,2 Cooper cliffs,M7G 8XJ,South David,United Kingdom
+SH0066,ParcelGo Co.,shipped,2023-02-03,69 Knight keys,L62 5NH,Lake Ryan,United Kingdom
+SH0067,ParcelGo Co.,awaiting shipment,2022-12-01,12 Cole route,KT65 1ZS,Port Rhyschester,United Kingdom
+SH0068,QuickShip Ltd.,shipped,2024-02-04,918 Derek junction,DN7 2HX,Baldwinland,United Kingdom
+SH0069,QuickShip Ltd.,shipped,2023-05-25,390 Glenn port,B31 9YU,East Amyshire,United Kingdom
+SH0070,ParcelGo Co.,awaiting shipment,2023-06-17,2 Dylan crossroad,NE9H 5FZ,Elizabethstad,United Kingdom
+SH0071,MailExpress Inc.,awaiting shipment,2023-05-04,"Studio 35I
+Lee ferry",L9 0SG,East Karen,United Kingdom
+SH0072,ParcelGo Co.,shipped,2022-10-13,173 Quinn tunnel,KT24 4GQ,Quinnberg,United Kingdom
+SH0073,ParcelGo Co.,awaiting pickup,2022-10-01,"Flat 84M
+Reece valleys",SA7P 5HT,Atkinsonside,United Kingdom
+SH0074,MailExpress Inc.,awaiting pickup,2023-08-06,"Studio 1
+Lewis springs",B26 9UR,West Annville,United Kingdom
+SH0075,MailExpress Inc.,completed,2022-04-04,"Studio 5
+Joan landing",S1 5BL,West Kimstad,United Kingdom
+SH0076,GlobalFreight Services,completed,2022-07-12,8 Nicholas village,WA7M 1WQ,Port Rita,United Kingdom
+SH0077,NextDay Delivery,awaiting pickup,2024-02-25,028 Jack shoal,N31 0DF,Dennisside,United Kingdom
+SH0078,MailExpress Inc.,awaiting pickup,2023-12-05,25 Phillips radial,M88 8HF,Lake Gregoryville,United Kingdom
+SH0079,QuickShip Ltd.,awaiting shipment,2022-08-29,"Studio 88F
+Price rest",TN1A 2ZB,South Traceychester,United Kingdom
+SH0080,MailExpress Inc.,shipped,2023-03-28,37 Brian square,TR5 3BW,Thompsonville,United Kingdom
+SH0081,ParcelGo Co.,awaiting pickup,2023-02-04,7 Sutton trafficway,W2S 4UH,North Alexanderberg,United Kingdom
+SH0082,ParcelGo Co.,awaiting shipment,2022-04-12,"Studio 26
+Joan harbor",RM40 8RE,Kennethburgh,United Kingdom
+SH0083,QuickShip Ltd.,completed,2024-01-03,"Studio 09
+Raymond harbor",E72 9AD,Williamschester,United Kingdom
+SH0084,MailExpress Inc.,cancelled,2023-09-05,"Studio 8
+Suzanne common",W9J 8PJ,Robsonmouth,United Kingdom
+SH0085,ParcelGo Co.,awaiting pickup,2022-08-12,"Flat 01
+Patricia path",SN7 2NW,West Suzanneborough,United Kingdom
+SH0086,ParcelGo Co.,completed,2024-01-31,61 Harriet wall,G0 9TR,New Jeremy,United Kingdom
+SH0087,MailExpress Inc.,shipped,2023-11-18,"Flat 37
+Colin court",B9 6SP,Heathchester,United Kingdom
+SH0088,NextDay Delivery,awaiting shipment,2022-04-29,"Studio 1
+Duncan glen",S6U 6TG,Trevorton,United Kingdom
+SH0089,NextDay Delivery,shipped,2023-10-08,"Studio 2
+Waters radial",SR55 8XP,Jacobside,United Kingdom
+SH0090,GlobalFreight Services,shipped,2022-04-18,7 Jones port,TN4X 5LN,New Luke,United Kingdom
+SH0091,MailExpress Inc.,awaiting pickup,2022-11-07,2 Hardy row,N9 9BW,South Dorothyport,United Kingdom
+SH0092,GlobalFreight Services,completed,2023-02-11,3 Rose motorway,W1 6NF,Eileenhaven,United Kingdom
+SH0093,ParcelGo Co.,completed,2023-03-17,"Flat 69
+Blake hill",ME46 1DN,Port Janice,United Kingdom
+SH0094,GlobalFreight Services,awaiting pickup,2022-07-30,"Flat 01
+Willis island",M5 7XG,Westtown,United Kingdom
+SH0095,QuickShip Ltd.,awaiting pickup,2022-05-01,39 Daniel divide,DE98 5NN,Huntermouth,United Kingdom
+SH0096,MailExpress Inc.,completed,2023-01-26,6 Alexandra inlet,DY6 8YA,Mauriceborough,United Kingdom
+SH0097,QuickShip Ltd.,completed,2024-01-14,"Studio 25I
+Law knolls",N24 9AH,Marionfort,United Kingdom
+SH0098,ParcelGo Co.,awaiting shipment,2022-04-07,2 Sean valley,B8 3DE,Hillville,United Kingdom
+SH0099,MailExpress Inc.,awaiting pickup,2023-12-25,"Flat 77
+Peacock mall",N7D 6ZJ,Williamhaven,United Kingdom
+SH0100,QuickShip Ltd.,shipped,2023-12-06,"Flat 0
+Anderson mission",B7F 7JA,Martinside,United Kingdom
