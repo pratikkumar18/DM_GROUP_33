@@ -23,4 +23,4 @@ RSQLite::dbWriteTable(my_connection, "product", product, append = TRUE)
 RSQLite::dbWriteTable(my_connection, "shipping", shipping, append = TRUE)
 RSQLite::dbWriteTable(my_connection, "supplier", supplier, append = TRUE)
 
-
+#read new data
