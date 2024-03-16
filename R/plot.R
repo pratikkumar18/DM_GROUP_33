@@ -1,3 +1,8 @@
+library(dplyr)
+library(readr)
+library(RSQLite)
+library(DBI)
+
 # Proportion of customers by gender
 customer_data <- customer %>%
   group_by(Gender) %>%
