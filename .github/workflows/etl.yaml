@@ -29,6 +29,9 @@ jobs:
       - name: Execute R script for updating data
         run: |
           Rscript R/update.R
+      - name: Execute R script for plotting
+        run: |
+          Rscript R/plot.R
       - name: Add files
         run: |
           git config --global user.email "chiaoyunting@gmail.com"
@@ -36,7 +39,7 @@ jobs:
           git add --all figures/
       - name: Commit files
         run: |
-          git commit -m "Add regression plot figure"
+          git commit -m "Add plot figure"
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
