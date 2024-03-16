@@ -54,3 +54,5 @@ dbGetQuery(database, "SELECT * FROM PRODUCT")
 
 # Disconnect from the database
 RSQLite::dbDisconnect(database)
+
+save.image("my_workspace.RData")

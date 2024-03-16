@@ -127,7 +127,8 @@ dbWriteTable(database, "PRODUCT", product, append = TRUE)
 dbWriteTable(database, "SUPPLIER", supplier, append = TRUE)
 dbWriteTable(database, "CATEGORY", category, append = TRUE)
 
-
 # Disconnect from the database
 RSQLite::dbDisconnect(database)
+
+save.image("my_workspace.RData")
 

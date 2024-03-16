@@ -3,6 +3,8 @@ library(readr)
 library(RSQLite)
 library(DBI)
 
+load("my_workspace.RData")
+
 # Proportion of customers by gender
 customer_data <- customer %>%
   group_by(Gender) %>%
@@ -47,6 +49,7 @@ plot2 <- ggplot(top_purchased_customer, aes(x=reorder(Customer_id, Order_Count),
 
 #save the plot to "figures" directory
 ggsave("figures/Top10_customer_with_highest_purchase_frequency.png", plot = plot2)
+
 
 # Disconnect from the database
 RSQLite::dbDisconnect(database)
