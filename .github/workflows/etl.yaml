@@ -1,8 +1,5 @@
 name: ETL workflow for group 33
-
 on:
-#  schedule:
-#    - cron: '0 */3 * * *' # Run every 3 hours
   push:
     branches: [ main ]
 jobs:
@@ -26,3 +23,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           Rscript -e 'install.packages(c("ggplot2","dplyr","readr","RSQLite"))'
+      - name: Execute R script
+        run: |
+          Rscript R/load_data.R
+      
