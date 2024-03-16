@@ -26,12 +26,6 @@ jobs:
       - name: Execute R script
         run: |
           Rscript R/load_data.R
-      - name: Execute R script for updating data
-        run: |
-          Rscript R/update.R
-      - name: Execute R script for plotting
-        run: |
-          Rscript R/plot.R
       - name: Add files
         run: |
           git config --global user.email "chiaoyunting@gmail.com"
