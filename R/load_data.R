@@ -24,6 +24,5 @@ RSQLite::dbWriteTable(my_connection, "shipping", shipping, append = TRUE)
 RSQLite::dbWriteTable(my_connection, "supplier", supplier, append = TRUE)
 
 
-
 # Close the database connection
 RSQLite::dbDisconnect(my_connection)
