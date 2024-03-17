@@ -1,0 +1,2 @@
+Order_id,Customer_id,Product_id,Shipping_id,Order_date,Quantity,Promotion_description,Discount_percent,Card_number,Card_scheme,Card_type,Security_code,Cardholder_name,YY,MM
+OR0102,C0032,PR040,SH0102,2023-12-25,4,Christmas Sale,0.2,4225270000000011,MASTERCARD,Credit,768,Henry Hall,28,06
