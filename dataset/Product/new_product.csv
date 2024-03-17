@@ -1,0 +1,2 @@
+Product_id,Product_name,Product_description,Unit_price,Stock,Supplier_id,Category_id
+PR0101,Ultimate Performance Desktop,"A powerhouse of computing prowess, the Ultimate Performance Desktop is engineered for peak performance. With lightning-fast processing speeds and cutting-edge graphics capabilities, this desktop computer is the ultimate solution for demanding tasks and immersive gaming experiences.",1200.99,15,SU0001,CA0006
