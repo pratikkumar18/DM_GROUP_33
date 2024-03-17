@@ -170,6 +170,12 @@ append_new_data <- function(directory, table_name, connection) {
       new_data$Card_number <- as.character(new_data$Card_number)
       new_data$Security_code <- as.character(new_data$Security_code)
       new_data$YY <- as.character(new_data$YY)
+      new_data$Order_date <- as.character(new_data$Order_date)
+    }
+    
+    # Convert specified columns to character type for 'Shipping' table
+    if (table_name == "SHIPPING") {
+      new_data$Shipping_date <- as.character(new_data$Shipping_date)
     }
     
     # Quality Check 1: Check for unique composite keys in 'Order' table
