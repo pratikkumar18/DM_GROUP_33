@@ -28,6 +28,7 @@ jobs:
           Rscript R/data_integrate.R
       - name: Add files
         run: |
+          git config --local --unset-all "http.https://github.com/.extraheader"
           git config --global user.email "chiaoyunting@gmail.com"
           git config --global user.name "ChiaoYunTing"
           git add -A  # Add all changes to staging area
