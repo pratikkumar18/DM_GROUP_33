@@ -2,6 +2,8 @@ name: ETL workflow for group 33
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'dataset/**'
 jobs:
   build:
     runs-on: ubuntu-latest
