@@ -246,8 +246,28 @@ for (i in seq_along(directories)) {
 
 #3. Generate Basic Analysis Plot
 
+# (1) Proportion of customers by gender
+customer_data <- customer %>%
+  group_by(Gender) %>%
+  count() %>%
+  ungroup() %>%
+  mutate(percentage = `n` / sum(`n`)) %>%
+  mutate(percent_label = scales::percent(percentage))
 
-# Top 10 Total Quantity Sold per Product
+plot1 <- ggplot(customer_data, aes(x = "", y = percentage, fill = Gender)) +
+  geom_col(color = "black") +
+  geom_label(aes(label = percent_label), color = c(1, 1),
+             position = position_stack(vjust = 0.5),
+             show.legend = FALSE) +
+  guides(fill = guide_legend(title = "Gender")) +
+  coord_polar(theta = "y") +
+  labs(title = "Proportion of Customers by Gender") +
+  theme_void()
+
+#save the plot to "figures" directory
+ggsave("figures/Proportion_of_customers_by_gender.png", plot = plot1)
+
+# (2) Top 10 Total Quantity Sold per Product
 top_purchased_product <- RSQLite::dbGetQuery(database, "SELECT 
     p.Product_id, 
     p.Product_name, 
@@ -262,16 +282,16 @@ ORDER BY
     Total_Quantity_Sold DESC
 LIMIT 10;")
 
-plot1 <- ggplot(top_purchased_product, aes(x=reorder(Product_name, Total_Quantity_Sold), y=Total_Quantity_Sold)) +
+plot2 <- ggplot(top_purchased_product, aes(x=reorder(Product_name, Total_Quantity_Sold), y=Total_Quantity_Sold)) +
   geom_bar(stat="identity", fill="skyblue") +
   coord_flip() + # Flips the axes
   labs(title="Top 10 Total Quantity Sold per Product", x="Product Name", y="Total Quantity Sold") +
   theme_minimal()
 
 #save the plot to "figures" directory
-ggsave("figures/Top10_total_quantity_sold_per_product.png", plot = plot1)
+ggsave("figures/Top10_total_quantity_sold_per_product.png", plot = plot2)
 
-#Top 10 Customers with the Highest Purchase Frequency
+# (3) Top 10 Customers with the Highest Purchase Frequency
 
 #connect to database
 database <- dbConnect(RSQLite::SQLite(), dbname = "group_33.db")
@@ -286,16 +306,16 @@ FROM (
 ) AS oc
 JOIN CUSTOMER c ON oc.Customer_id = c.customer_id;")
 
-plot2 <- ggplot(top_purchased_customer, aes(x=reorder(Customer_id, Order_Count), y=Order_Count)) +
+plot3 <- ggplot(top_purchased_customer, aes(x=reorder(Customer_id, Order_Count), y=Order_Count)) +
   geom_bar(stat="identity", fill="skyblue") +
   coord_flip() + # Flips the axes
   labs(title="Top 10 Customers with the Highest Purchase Frequency", x="Customer ID", y="Total Purchase Times") +
   theme_minimal()
 
 #save the plot to "figures" directory
-ggsave("figures/Top10_customer_with_highest_purchase_frequency.png", plot = plot2)
+ggsave("figures/Top10_customer_with_highest_purchase_frequency.png", plot = plot3)
 
-# Top 10 Customers with the Highest Order Value
+# (4) Top 10 Customers with the Highest Order Value
 
 top_order_value_customer <- RSQLite::dbGetQuery(database, "SELECT
     c.Customer_id,
@@ -312,15 +332,56 @@ ORDER BY
     Total_Order_Value DESC
 LIMIT 10;")
 
-plot3 <- ggplot(top_order_value_customer, aes(x=reorder(Customer_id, Total_Order_Value), y=Total_Order_Value)) +
+plot4 <- ggplot(top_order_value_customer, aes(x=reorder(Customer_id, Total_Order_Value), y=Total_Order_Value)) +
   geom_bar(stat="identity", fill="skyblue") +
   coord_flip() + # Flips the axes
   labs(title="Top 10 Customers with the Highest Order Value", x="Customer ID", y="Total Order Value") +
   theme_minimal()
 
 #save the plot to "figures" directory
-ggsave("figures/Top10_Customers_with_the_highest_order_value.png", plot = plot3)
+ggsave("figures/Top10_Customers_with_the_highest_order_value.png", plot = plot4)
 
+
+# (5) Day Difference between Order and Shipping Date
+day_diff_freq <- merge(x = order, y = shipping, by = "Shipping_id", all.x = TRUE) %>%
+  mutate(day_diff = as.numeric(as.Date(Shipping_date) - as.Date(Order_date)))
+
+plot5 <- ggplot(day_diff_freq, aes(y = as.factor(day_diff))) +
+  geom_bar(fill = "steelblue") +
+  labs(x = "Day difference", y = "Frequency", title = "Day Difference between Order and Shipping Date") +
+  theme_bw()
+
+#save the plot to "figures" directory
+ggsave("figures/Day_difference_between_order_and_shipping_date.png", plot = plot5)
+
+# (6) Gross Sales Over Time by Month
+Gross_sale <- RSQLite::dbGetQuery(database, "
+SELECT
+    -- extract month, year from order date
+    strftime('%Y-%m', o.Order_date) AS YearMonth,
+    
+    SUM((o.Quantity * p.Unit_price) * (1 - COALESCE(o.Discount_percent, 0))) AS order_value
+    
+FROM PRODUCT p
+INNER JOIN 'ORDER' o ON o.Product_id = p.Product_id
+GROUP BY 
+    strftime('%Y-%m', o.Order_date);
+")
+
+Gross_sale$YearMonth <- as.Date(paste0(Gross_sale$YearMonth, "-01"))
+
+plot6 <- ggplot(data = Gross_sale, aes(x = YearMonth, y = order_value)) +
+  geom_line() +
+  geom_point() +
+  labs(title = "Gross Sales Over Time by Month",
+       x = "Year-Month",
+       y = "Gross Sales") +
+  theme_minimal() +
+  scale_x_date(date_breaks = "1 month", date_labels = "%Y-%m") +
+  theme(axis.text.x = element_text(angle = 45))
+
+#save the plot to "figures" directory
+ggsave("figures/Gross_sales_over_time_by_month.png", plot = plot6)
 
 #-----------------testing-------------------- 
 
