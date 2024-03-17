@@ -25,7 +25,7 @@ jobs:
           Rscript -e 'install.packages(c("ggplot2","dplyr","readr","RSQLite","DBI"))'
       - name: Execute R script
         run: |
-          Rscript R/load_data.R
+          Rscript R/data_integrate.R
       - name: Add files
         run: |
           git config --global user.email "chiaoyunting@gmail.com"
@@ -37,6 +37,6 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+            github_token: ${{ secrets.TOKEN }}
             branch: main
       
