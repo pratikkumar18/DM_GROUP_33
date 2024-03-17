@@ -35,6 +35,7 @@ jobs:
           git config --local --unset-all "http.https://github.com/.extraheader"
           git config --global user.email "chiaoyunting@gmail.com"
           git config --global user.name "ChiaoYunTing"
+          git add group_33.db
           git add --all figures/
       - name: Commit files
         run: |
