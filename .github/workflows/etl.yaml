@@ -3,7 +3,9 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'dataset/**'
+      - '**/*.yml'
+      - '**/*.yaml'
+      - 'dataset/**/*.csv'
 jobs:
   build:
     runs-on: ubuntu-latest
