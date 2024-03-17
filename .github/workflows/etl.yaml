@@ -31,10 +31,10 @@ jobs:
           git config --local --unset-all "http.https://github.com/.extraheader"
           git config --global user.email "chiaoyunting@gmail.com"
           git config --global user.name "ChiaoYunTing"
-          git add -A  # Add all changes to staging area
+          git add --all figures/
       - name: Commit files
         run: |
-          git commit -m "Add plot figure" || echo "No changes to commit"
+          git commit -m "Add plot figure" 
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
