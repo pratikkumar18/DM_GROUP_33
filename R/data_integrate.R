@@ -282,6 +282,20 @@ ggsave(paste0("figures/Top10_customer_with_highest_purchase_frequency_",
               this_filename_date,"_",
               this_filename_time,".png"), plot1)
 
+# Gross_sales_over_time
+
+Gross_sale <- RSQLite::dbGetQuery(database, "
+SELECT
+    -- extract month, year from order date
+    strftime('%Y-%m', o.Order_date) AS YearMonth,
+    
+    SUM((o.Quantity * p.Unit_price) * (1 - COALESCE(o.Discount_percent, 0))) AS order_value
+    
+FROM PRODUCT p
+INNER JOIN 'ORDER' o ON o.Product_id = p.Product_id
+GROUP BY 
+    strftime('%Y-%m', o.Order_date);
+")
 
 Gross_sale$YearMonth <- as.Date(paste0(Gross_sale$YearMonth, "-01"))
 
