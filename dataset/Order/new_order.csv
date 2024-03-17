@@ -1,2 +1,0 @@
-Order_id,Customer_id,Product_id,Shipping_id,Order_date,Quantity,Promotion_description,Discount_percent,Card_number,Card_scheme,Card_type,Security_code,Cardholder_name,YY,MM
-OR0101,C0095,PR0101,SH0101,2022-12-25,4,Christmas Sale,0.2,4225270000000000,MASTERCARD,Credit,356,Charles Pearce,28,07
