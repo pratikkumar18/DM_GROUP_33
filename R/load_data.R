@@ -12,6 +12,11 @@ product <- readr::read_csv("dataset/Product/product_v2.csv")
 shipping <- readr::read_csv("dataset/Shipping/shipping_v3.csv")
 supplier <- readr::read_csv("dataset/Supplier/supplier_v2.csv")
 
+#change Card_number, Security_code, YY in order to character
+order$Card_number <- as.character(order$Card_number)
+order$Security_code <- as.character(order$Security_code)
+order$YY <- as.character(order$YY)
+
 #change date data to character 
 customer$Date_of_birth <- as.character(customer$Date_of_birth)
 order$Order_date <- as.character(order$Order_date)
@@ -127,6 +132,10 @@ dbWriteTable(database, "PRODUCT", product, append = TRUE)
 dbWriteTable(database, "SUPPLIER", supplier, append = TRUE)
 dbWriteTable(database, "CATEGORY", category, append = TRUE)
 
+dbGetQuery(database, "SELECT * FROM 'ORDER'")
+
+
+#-----------------------------------------------------------------
 
 #update data
 #read new data
@@ -174,7 +183,7 @@ for (i in seq_along(directories)) {
   append_new_data(paste0("dataset/", directories[i]), table_names[i], database)
 }
 
-dbGetQuery(database, "SELECT * FROM PRODUCT")
+#-----------------------------------------------------------------
 
 #plot graph
 # Proportion of customers by gender
