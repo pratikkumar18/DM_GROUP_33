@@ -7,7 +7,6 @@ on:
     paths:
       - '**/*.yml'
       - '**/*.yaml'
-      - 'dataset/**/*.csv'
 jobs:
   build:
     runs-on: ubuntu-latest
